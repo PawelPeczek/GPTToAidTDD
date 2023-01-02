@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "gpt-tester"
+version = "0.1.0"
+description = "Simple library to aid Python testing using OpenAI Chat GPT"
+authors = ["Paweł Pęczek <pawel.m.peczek@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "gpt_tester"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+openai = "^0.25.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.8.0"
+mypy = "^0.971"
+pytest = "^7.1.0"
+pre-commit = "^2.20.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
